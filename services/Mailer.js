@@ -1,4 +1,5 @@
 const helper = require("sendgrid").mail;
 const { sendGridKey } = require("../config/keys");
 
-class Mail extends helper.Mail {}
+class Mailer extends helper.Mail {}
+module.exports = Mailer;
